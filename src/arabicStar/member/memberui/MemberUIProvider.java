@@ -1,4 +1,4 @@
-package arabicStar.memberui;
+package arabicStar.member.memberui;
 
 import arabicStar.uiBase.ContentProvider;
 import javafx.event.Event;

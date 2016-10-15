@@ -2,7 +2,7 @@ package arabicStar.mainui;
 
 import arabicStar.uiBase.ContentProvider;
 import arabicStar.uiBase.UIController;
-import memberui.MemberUIProvider;
+import arabicStar.member.memberui.MemberUIProvider;
 
 public class ClientUIController implements UIController {
 	ContentProvider memberUiProvider;
