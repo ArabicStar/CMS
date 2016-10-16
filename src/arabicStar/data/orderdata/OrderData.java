@@ -2,6 +2,7 @@ package arabicStar.data.orderdata;
 
 import java.util.Date;
 
+import arabicStar.po.OrderPO;
 import arabicStar.util.order.Order;
 /**
  * 这是Order数据的接口
@@ -31,4 +32,12 @@ public interface OrderData {
 	 * @return 申诉的信息
 	 */
 	public String getAppeal();
+
+	public void insert(OrderPO po);
+
+	public void delete(OrderPO po);
+
+	public void update(OrderPO po);
+
+	public OrderPO find(int id);
 }

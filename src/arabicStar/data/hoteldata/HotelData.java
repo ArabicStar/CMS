@@ -1,5 +1,6 @@
 package arabicStar.data.hoteldata;
 
+import arabicStar.po.HotelPO;
 import arabicStar.util.hotel.Hotel;
 
 /**
@@ -14,7 +15,15 @@ public interface HotelData {
 	public double getRating();
 
 	public double getCheap();
-	
+
 	public int getStar();
-	
+
+	public void insert(HotelPO po);
+
+	public void delete(HotelPO po);
+
+	public void update(HotelPO po);
+
+	public HotelPO find(int id);
+
 }

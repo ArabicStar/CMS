@@ -11,4 +11,12 @@ public interface MemberData {
 	public ResultMessage updateCredit(MemberPO member, int increment);
 
 	public ResultMessage getCreditRecord(MemberPO member);
+
+	public void insert(MemberPO po);
+
+	public void delete(MemberPO po);
+
+	public void update(MemberPO po);
+
+	public MemberPO find(int id);
 }
