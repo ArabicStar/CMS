@@ -1,5 +1,7 @@
 package arabicStar.util.order;
 
+import java.util.Date;
+
 import arabicStar.po.OrderState;
 import arabicStar.util.hotel.Hotel;
 import arabicStar.util.hotel.Room;
@@ -14,26 +16,11 @@ public class Order {
 	// TODO: 缺少酒店信息
 	Hotel hotel;
 	Room room;
-	OrderState state;
+	private OrderState state;
+	private Date date;// TODO:这个地方应该自己实现date来表示时间
+	private int stayDays;
 	
-	public Hotel getHotel() {
-		return hotel;
-	}
-	public void setHotel(Hotel hotel) {
-		this.hotel = hotel;
-	}
-	public Room getRoom() {
-		return room;
-	}
-	public void setRoom(Room room) {
-		this.room = room;
-	}
-	public OrderState getState() {
-		return state;
-	}
-	public void setState(OrderState state) {
-		this.state = state;
-	}
+
 	
 	public Order() {
 		
@@ -89,5 +76,36 @@ public class Order {
 		} else {
 			return false;
 		}
+	}
+	
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public int getStayDays() {
+		return stayDays;
+	}
+	public void setStayDays(int stayDays) {
+		this.stayDays = stayDays;
+	}
+	public Hotel getHotel() {
+		return hotel;
+	}
+	public void setHotel(Hotel hotel) {
+		this.hotel = hotel;
+	}
+	public Room getRoom() {
+		return room;
+	}
+	public void setRoom(Room room) {
+		this.room = room;
+	}
+	public OrderState getState() {
+		return state;
+	}
+	public void setState(OrderState state) {
+		this.state = state;
 	}
 }
