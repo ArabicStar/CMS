@@ -1,7 +1,7 @@
 package arabicStar.vo;
 
-import arabicStar.hotel.Hotel;
-import arabicStar.hotel.Room;
+import arabicStar.util.hotel.Hotel;
+import arabicStar.util.hotel.Room;
 
 /**
  * 订单信息类，是生成订单时传入的参数
