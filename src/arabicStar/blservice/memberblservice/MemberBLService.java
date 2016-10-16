@@ -29,7 +29,7 @@ public class MemberBLService implements MemberBL {
 		System.out.println("Credit gain!");
 		return new ResultMessage();
 	}
-
+	
 	@Override
 	public int getCredit() {
 		return 100;
