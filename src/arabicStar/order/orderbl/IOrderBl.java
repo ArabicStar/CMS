@@ -1,6 +1,7 @@
 package arabicStar.order.orderbl;
 
 import arabicStar.order.Order;
+import arabicStar.vo.OrderInfo;
 /**
  * 这是Order逻辑的接口
  * @author WaterWan
@@ -10,9 +11,8 @@ public interface IOrderBl {
 	/**
 	 * 根据传入的值，生成一个新订单
 	 * @return 返回新订单
-	 * TODO: 未传递VO
 	 */
-	public Order born();
+	public Order born(OrderInfo orderInfo);
 	/**
 	 * 撤销传入的订单
 	 * @param order 需要撤销的订单

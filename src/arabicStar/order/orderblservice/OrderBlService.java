@@ -2,6 +2,7 @@ package arabicStar.order.orderblservice;
 
 import arabicStar.order.Order;
 import arabicStar.order.orderbl.IOrderBl;
+import arabicStar.vo.OrderInfo;
 /**
  * 这是Order逻辑的实现
  * @author WaterWan
@@ -10,7 +11,7 @@ import arabicStar.order.orderbl.IOrderBl;
 public class OrderBlService implements IOrderBl {
 
 	@Override
-	public Order born() {
+	public Order born(OrderInfo orderInfo) {
 		// TODO Auto-generated method stub
 		System.out.println("成功生成该订单");
 		return null;
