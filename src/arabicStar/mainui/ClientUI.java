@@ -1,8 +1,8 @@
 package arabicStar.mainui;
 
-import arabicStar.uiBase.ContentPresenter;
-import arabicStar.uiBase.JumpEngine;
-import arabicStar.uiBase.UIController;
+import arabicStar.uibase.ContentPresenter;
+import arabicStar.uibase.JumpEngine;
+import arabicStar.uibase.UIController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -15,7 +15,7 @@ public class ClientUI extends Application implements ContentPresenter {
 	private Stage primaryStage;
 
 	public ClientUI() {
-		controller = new ClientUIController();
+		controller = new ClientUIController();// set controller
 	}
 
 	@Override
@@ -29,10 +29,10 @@ public class ClientUI extends Application implements ContentPresenter {
 		engine = new ClientJumpEngine(this, controller);
 
 		StackPane pane = new StackPane();
-		Button b = new Button("Click");
+		Button b = new Button("Click");// just a demo
 		pane.getChildren().add(b);
 
-		engine.registerWidget(b);
+		engine.registerWidget(b);// register a jump trigger
 		primaryStage.setScene(new Scene(pane, 300, 300));
 		primaryStage.show();
 

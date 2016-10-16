@@ -1,4 +1,4 @@
-package arabicStar.uiBase;
+package arabicStar.uibase;
 /**
  * @author Clef
  * @version 0.1
@@ -13,6 +13,11 @@ import java.util.List;
 import javafx.scene.Scene;
 import javafx.scene.control.Control;
 
+/**
+ * @author tinke
+ *
+ *         Controller for page jumping
+ */
 public abstract class JumpEngine {
 	protected ContentPresenter presenter;
 	protected List<Control> widgets;

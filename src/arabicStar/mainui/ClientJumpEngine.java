@@ -1,9 +1,9 @@
 package arabicStar.mainui;
 
-import arabicStar.uiBase.ContentPresenter;
-import arabicStar.uiBase.ContentProvider;
-import arabicStar.uiBase.JumpEngine;
-import arabicStar.uiBase.UIController;
+import arabicStar.uibase.ContentPresenter;
+import arabicStar.uibase.ContentProvider;
+import arabicStar.uibase.JumpEngine;
+import arabicStar.uibase.UIController;
 import javafx.scene.control.Control;
 
 public class ClientJumpEngine extends JumpEngine {
