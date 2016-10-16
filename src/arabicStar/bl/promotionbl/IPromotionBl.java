@@ -7,7 +7,7 @@ import arabicStar.util.order.Order;
  * @author Vivian
  *
  */
-public interface IPromotionBl {
+public interface IPromotionBL {
 
 	public Order apply(Order order);
 }

@@ -1,9 +1,9 @@
 package arabicStar.blservice.marketblservice;
 
-import arabicStar.bl.marketbl.*;
+import arabicStar.bl.marketbl.IMarketBL;
 import arabicStar.util.market.Market;
 
-public class MarketBlService implements IMarketBl{
+public class MarketBLService implements IMarketBL{
 
 	@Override
 	public void updateInfo(Market market) {

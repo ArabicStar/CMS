@@ -1,16 +1,15 @@
 package arabicStar.blservice.hotelblservice;
 
-import arabicStar.bl.hotelbl.IHotelBl;
+import arabicStar.bl.hotelbl.IHotelBL;
 import arabicStar.util.hotel.Hotel;
 import arabicStar.util.hotel.Room;
-import arabicStar.util.order.Order;
 
 /**
  * 这是Hotel逻辑的方法实现
  * @author Vivian
  *
  */
-public class HotelBlService implements IHotelBl {
+public class HotelBLService implements IHotelBL {
 
 	/**
 	 * 根据传入的房间信息，查看酒店剩余房间，入住指定房间

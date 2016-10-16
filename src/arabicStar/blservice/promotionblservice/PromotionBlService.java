@@ -1,6 +1,6 @@
 package arabicStar.blservice.promotionblservice;
 
-import arabicStar.bl.promotionbl.IPromotionBl;
+import arabicStar.bl.promotionbl.IPromotionBL;
 import arabicStar.util.order.Order;
 
 /**
@@ -8,7 +8,7 @@ import arabicStar.util.order.Order;
  * @author Vivian
  *
  */
-public class PromotionBlService implements IPromotionBl {
+public class PromotionBLService implements IPromotionBL {
 
 	/**
 	 * 将传入的订单经过促销策略装饰再次返回

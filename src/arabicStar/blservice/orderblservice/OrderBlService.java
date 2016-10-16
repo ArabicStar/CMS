@@ -1,6 +1,6 @@
 package arabicStar.blservice.orderblservice;
 
-import arabicStar.bl.orderbl.IOrderBl;
+import arabicStar.bl.orderbl.IOrderBL;
 import arabicStar.util.order.Order;
 import arabicStar.vo.OrderInfo;
 import arabicStar.vo.ResultMessage;
@@ -9,7 +9,7 @@ import arabicStar.vo.ResultMessage;
  * @author WaterWan
  *
  */
-public class OrderBlService implements IOrderBl {
+public class OrderBLService implements IOrderBL {
 	/**
 	 * 根据传入的值，生成一个新订单
 	 * @param 传入的订单信息

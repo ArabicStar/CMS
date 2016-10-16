@@ -7,7 +7,7 @@ import arabicStar.util.market.Market;
  * @author ParanoiaSun
  *
  */
-public interface IMarketBl {
+public interface IMarketBL {
 
 	/**
 	 * 传入修改后的网站营销人员信息进行信息更新
