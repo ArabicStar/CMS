@@ -1,6 +1,7 @@
 package arabicStar.dataservice.promotiondataservice;
 
 import arabicStar.data.promotiondata.PromotionData;
+import arabicStar.po.PromotionPO;
 import arabicStar.util.promotion.Promotion;
 
 /**
@@ -21,4 +22,21 @@ public class PromotionDataService implements PromotionData {
 		return null;
 	}
 
+	public void insert(PromotionPO po){
+		System.out.println("Insert Succeed!");
+	}
+
+	public void delete(PromotionPO po){
+		System.out.println("Delete Succeed!");
+	}
+
+	public void update(PromotionPO po){
+		System.out.println("Update Succeed!");
+	}
+
+	public PromotionPO find(int id){
+		System.out.println("Find Succeed!");
+		PromotionPO po = new PromotionPO(null,null);
+		return po;
+	}
 }

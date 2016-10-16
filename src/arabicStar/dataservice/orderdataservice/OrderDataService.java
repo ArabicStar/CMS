@@ -3,6 +3,7 @@ package arabicStar.dataservice.orderdataservice;
 import java.util.Date;
 
 import arabicStar.data.orderdata.OrderData;
+import arabicStar.po.OrderPO;
 import arabicStar.util.order.Order;
 /**
  * 这是Order数据的实现
@@ -39,4 +40,21 @@ public class OrderDataService implements OrderData {
 		return new String("Appeal");
 	}
 
+	public void insert(OrderPO po){
+		System.out.println("Insert Succeed!");
+	}
+
+	public void delete(OrderPO po){
+		System.out.println("Delete Succeed!");
+	}
+
+	public void update(OrderPO po){
+		System.out.println("Update Succeed!");
+	}
+
+	public OrderPO find(int id){
+		System.out.println("Find Succeed!");
+		OrderPO po = new OrderPO();
+		return po;
+	}
 }

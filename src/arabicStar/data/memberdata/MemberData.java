@@ -1,14 +1,14 @@
 package arabicStar.data.memberdata;
 
-import arabicStar.util.member.Member;
+import arabicStar.po.MemberPO;
 import arabicStar.vo.ResultMessage;
 
 public interface MemberData {
-	public ResultMessage newMember(Member newMember);
+	public ResultMessage newMember(MemberPO newMember);
 
-	public Member getMember(int id);
+	public MemberPO getMember(int id);
 
-	public ResultMessage updateCredit(Member member, int increment);
+	public ResultMessage updateCredit(MemberPO member, int increment);
 
-	public ResultMessage getCreditRecord(Member member);
+	public ResultMessage getCreditRecord(MemberPO member);
 }

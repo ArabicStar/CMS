@@ -2,6 +2,7 @@ package arabicStar.dataservice.hoteldataservice;
 
 import arabicStar.data.hoteldata.HotelData;
 import arabicStar.util.hotel.Hotel;
+import arabicStar.po.HotelPO;
 
 /**
  * 这是Hotel数据的方法实现
@@ -54,4 +55,21 @@ public class HotelDataService implements HotelData {
 		return 0;
 	}
 
+	public void insert(HotelPO po){
+		System.out.println("Insert Succeed!");
+	}
+
+	public void delete(HotelPO po){
+		System.out.println("Delete Succeed!");
+	}
+
+	public void update(HotelPO po){
+		System.out.println("Update Succeed!");
+	}
+
+	public HotelPO find(int id){
+		System.out.println("Find Succeed!");
+		HotelPO po = new HotelPO(null,0,null,null,null,0,null);
+		return po;
+	}
 }
