@@ -15,28 +15,28 @@ public class OrderDataService implements OrderData {
 	public Order getInfo() {
 		// TODO Auto-generated method stub
 		System.out.println("Get INFO");
-		return null;
+		return new Order();
 	}
 
 	@Override
 	public Date getTime() {
 		// TODO Auto-generated method stub
 		System.out.println("Get TIME");
-		return null;
+		return new Date();
 	}
 
 	@Override
 	public String getRoom() {
 		// TODO Auto-generated method stub
 		System.out.println("Get ROOM");
-		return null;
+		return new String("Room");
 	}
 
 	@Override
 	public String getAppeal() {
 		// TODO Auto-generated method stub
 		System.out.println("Get APPEAL");
-		return null;
+		return new String("Appeal");
 	}
 
 }
