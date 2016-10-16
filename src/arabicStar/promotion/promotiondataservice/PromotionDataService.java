@@ -10,6 +10,10 @@ import arabicStar.promotion.promotiondata.IPromotionData;
  */
 public class PromotionDataService implements IPromotionData {
 
+	/**
+	 * 获取促销策略信息
+	 * @return 返回促销策略名称与介绍
+	 */
 	@Override
 	public Promotion getDiscription() {
 		// TODO Auto-generated method stub

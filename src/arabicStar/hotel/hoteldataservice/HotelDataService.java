@@ -10,6 +10,10 @@ import arabicStar.hotel.hoteldata.IHotelData;
  */
 public class HotelDataService implements IHotelData {
 
+	/**
+	 * 获取酒店信息
+	 * @return 所需要的酒店
+	 */
 	@Override
 	public Hotel getInfo() {
 		// TODO Auto-generated method stub
@@ -17,6 +21,10 @@ public class HotelDataService implements IHotelData {
 		return null;
 	}
 
+	/**
+	 * 获取酒店的用户评分
+	 * @return 用户评分
+	 */
 	@Override
 	public double getRating() {
 		// TODO Auto-generated method stub
@@ -24,6 +32,10 @@ public class HotelDataService implements IHotelData {
 		return 0;
 	}
 
+	/**
+	 * 获取酒店打过折后的最低房价
+	 * @return 最低价格
+	 */
 	@Override
 	public double getCheap() {
 		// TODO Auto-generated method stub
@@ -31,6 +43,10 @@ public class HotelDataService implements IHotelData {
 		return 0;
 	}
 
+	/**
+	 * 获取酒店的星级
+	 * @return 星级
+	 */
 	@Override
 	public int getStar() {
 		// TODO Auto-generated method stub

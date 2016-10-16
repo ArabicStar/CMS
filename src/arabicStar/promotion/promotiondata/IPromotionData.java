@@ -9,9 +9,5 @@ import arabicStar.promotion.Promotion;
  */
 public interface IPromotionData {
 
-	/**
-	 * 获取促销策略信息
-	 * @return 返回促销策略名称与介绍
-	 */
 	public Promotion getDiscription();
 }
