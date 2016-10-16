@@ -2,7 +2,11 @@ package arabicStar.order.orderblservice;
 
 import arabicStar.order.Order;
 import arabicStar.order.orderbl.IOrderBl;
-
+/**
+ * 这是Order逻辑的实现
+ * @author WaterWan
+ *
+ */
 public class OrderBlService implements IOrderBl {
 
 	@Override

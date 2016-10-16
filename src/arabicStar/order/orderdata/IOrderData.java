@@ -3,7 +3,11 @@ package arabicStar.order.orderdata;
 import java.util.Date;
 
 import arabicStar.order.Order;
-
+/**
+ * 这是Order数据的接口
+ * @author WaterWan
+ *
+ */
 public interface IOrderData {
 	/**
 	 * 获取订单信息

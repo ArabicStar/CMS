@@ -4,7 +4,11 @@ import java.util.Date;
 
 import arabicStar.order.Order;
 import arabicStar.order.orderdata.IOrderData;
-
+/**
+ * 这是Order数据的实现
+ * @author WaterWan
+ *
+ */
 public class OrderDataService implements IOrderData {
 
 	@Override
