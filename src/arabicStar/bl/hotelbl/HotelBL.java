@@ -7,7 +7,7 @@ import arabicStar.util.hotel.Room;
  * @author Vivian
  *
  */
-public interface IHotelBL {
+public interface HotelBL {
 
 	public boolean checkIn(Room room);
 	

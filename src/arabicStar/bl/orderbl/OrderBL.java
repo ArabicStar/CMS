@@ -8,7 +8,7 @@ import arabicStar.vo.ResultMessage;
  * @author WaterWan
  *
  */
-public interface IOrderBL {
+public interface OrderBL {
 
 	public Order born(OrderInfo orderInfo);
 
