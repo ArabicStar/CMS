@@ -5,6 +5,7 @@ package arabicStar.util.hotel;
  *
  */
 public class Hotel {
-	// TODO: 缺少酒店信息
+	
+	
 	
 }
