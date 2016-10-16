@@ -1,14 +1,14 @@
 package arabicStar.blservice.memberblservice;
 
 import arabicStar.bl.memberbl.MemberBL;
-import arabicStar.vo.ContactInfo;
-import arabicStar.vo.MemberInfo;
+import arabicStar.vo.ContactVO;
+import arabicStar.vo.MemberVO;
 import arabicStar.vo.ResultMessage;
 
 public class MemberBLService implements MemberBL {
 
 	@Override
-	public ResultMessage updateInfo(MemberInfo info) {
+	public ResultMessage updateInfo(MemberVO info) {
 		System.out.println("Update Info success!");
 		return new ResultMessage();
 	}
@@ -19,9 +19,9 @@ public class MemberBLService implements MemberBL {
 	}
 
 	@Override
-	public ContactInfo getContact() {
+	public ContactVO getContact() {
 		System.out.println("Acquiring contact info");
-		return new ContactInfo();
+		return new ContactVO();
 	}
 
 	@Override

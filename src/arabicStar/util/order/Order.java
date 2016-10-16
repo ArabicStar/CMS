@@ -3,7 +3,7 @@ package arabicStar.util.order;
 import arabicStar.po.OrderState;
 import arabicStar.util.hotel.Hotel;
 import arabicStar.util.hotel.Room;
-import arabicStar.vo.OrderInfo;
+import arabicStar.vo.OrderVO;
 
 /**
  * This class is the info of order
@@ -39,7 +39,7 @@ public class Order {
 		
 	}
 	
-	public Order(OrderInfo orderInfo) {
+	public Order(OrderVO orderInfo) {
 		
 	}
 	

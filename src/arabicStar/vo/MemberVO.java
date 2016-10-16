@@ -1,10 +1,10 @@
 package arabicStar.vo;
 
-public class MemberInfo {
+public class MemberVO {
 	private String name;
-	private ContactInfo contact;
+	private ContactVO contact;
 
-	public ContactInfo getContact() {
+	public ContactVO getContact() {
 		return contact;
 	}
 
@@ -16,7 +16,7 @@ public class MemberInfo {
 		this.name = name;
 	}
 
-	public void setContact(ContactInfo contact) {
+	public void setContact(ContactVO contact) {
 		this.contact = contact;
 	}
 }

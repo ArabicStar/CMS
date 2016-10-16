@@ -8,7 +8,7 @@ import arabicStar.util.hotel.Room;
  * @author WaterWan
  * TODO:还有属性没有添加
  */
-public class OrderInfo {
+public class OrderVO {
 	private Hotel hotel;
 	
 	private Room room;

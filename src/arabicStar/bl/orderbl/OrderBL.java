@@ -1,7 +1,7 @@
 package arabicStar.bl.orderbl;
 
 import arabicStar.util.order.Order;
-import arabicStar.vo.OrderInfo;
+import arabicStar.vo.OrderVO;
 import arabicStar.vo.ResultMessage;
 /**
  * 这是Order逻辑的接口
@@ -10,7 +10,7 @@ import arabicStar.vo.ResultMessage;
  */
 public interface OrderBL {
 
-	public Order born(OrderInfo orderInfo);
+	public Order born(OrderVO orderInfo);
 
 	public ResultMessage die(Order order);
 

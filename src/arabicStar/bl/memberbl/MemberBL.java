@@ -1,7 +1,7 @@
 package arabicStar.bl.memberbl;
 
-import arabicStar.vo.ContactInfo;
-import arabicStar.vo.MemberInfo;
+import arabicStar.vo.ContactVO;
+import arabicStar.vo.MemberVO;
 import arabicStar.vo.ResultMessage;
 
 /**
@@ -16,7 +16,7 @@ public interface MemberBL {
 	 *            pack of member's info to be modified
 	 * @return result of operation
 	 */
-	public ResultMessage updateInfo(MemberInfo info);
+	public ResultMessage updateInfo(MemberVO info);
 
 	/**
 	 * @return member's name
@@ -26,7 +26,7 @@ public interface MemberBL {
 	/**
 	 * @return member's contact info
 	 */
-	public ContactInfo getContact();
+	public ContactVO getContact();
 
 	/**
 	 * @param increment

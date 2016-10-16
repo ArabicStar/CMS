@@ -1,6 +1,6 @@
 package arabicStar.vo;
 
-public class ContactInfo {
+public class ContactVO {
 	private String email;
 	private String mobilePhone;
 	private String fixedPhone;

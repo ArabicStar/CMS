@@ -2,7 +2,7 @@ package arabicStar.blservice.orderblservice;
 
 import arabicStar.bl.orderbl.OrderBL;
 import arabicStar.util.order.Order;
-import arabicStar.vo.OrderInfo;
+import arabicStar.vo.OrderVO;
 import arabicStar.vo.ResultMessage;
 /**
  * 这是Order逻辑的实现
@@ -17,7 +17,7 @@ public class OrderBLService implements OrderBL {
 	 * @return 返回新订单
 	 */
 	@Override
-	public Order born(OrderInfo orderInfo) {
+	public Order born(OrderVO orderInfo) {
 		// TODO Auto-generated method stub
 		System.out.println("成功生成该订单");
 		return new Order(orderInfo);

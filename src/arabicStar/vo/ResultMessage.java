@@ -8,6 +8,10 @@ import arabicStar.util.order.Order;
  * TODO：还没有添加属性
  */
 public class ResultMessage {
+	
+	public ResultMessage(){
+		System.out.println("未定义");
+	}
 	public ResultMessage(Order order) {
 		if(order.isUnexecuted()) {
 			System.out.println("未执行状态");
