@@ -7,7 +7,7 @@ import arabicStar.util.market.Market;
  * @author ParanoiaSun
  * TODO:还有属性没有添加
  */
-public class MarketInfo {
+public class MarketVO {
 	private Market market;
 
 	public Market getHotel() {

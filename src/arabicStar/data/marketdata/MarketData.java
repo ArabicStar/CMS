@@ -1,6 +1,6 @@
 package arabicStar.data.marketdata;
 
-import arabicStar.vo.MarketInfo;
+import arabicStar.vo.MarketVO;
 
 public interface MarketData {
 
@@ -9,5 +9,5 @@ public interface MarketData {
 	 * @return market的信息
 	 * TODO:返回值类型为MarketInfo
 	 */
-	public MarketInfo getInfo();
+	public MarketVO getInfo();
 }
