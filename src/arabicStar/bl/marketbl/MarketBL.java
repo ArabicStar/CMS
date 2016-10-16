@@ -1,6 +1,7 @@
 package arabicStar.bl.marketbl;
 
 import arabicStar.util.market.Market;
+import arabicStar.vo.ResultMessage;
 
 /**
  * market的逻辑接口
@@ -15,6 +16,6 @@ public interface MarketBL {
 	 * @return 修改的提示信息
 	 * TODO:返回值类型为ResultMessage
 	 */
-	public void updateInfo(Market market);
+	public ResultMessage updateInfo(Market market);
 
 }
