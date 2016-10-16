@@ -2,14 +2,14 @@ package arabicStar.dataservice.orderdataservice;
 
 import java.util.Date;
 
-import arabicStar.data.orderdata.IOrderData;
+import arabicStar.data.orderdata.OrderData;
 import arabicStar.util.order.Order;
 /**
  * 这是Order数据的实现
  * @author WaterWan
  *
  */
-public class OrderDataService implements IOrderData {
+public class OrderDataService implements OrderData {
 
 	@Override
 	public Order getInfo() {

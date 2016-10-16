@@ -2,7 +2,7 @@ package arabicStar.data.marketdata;
 
 import arabicStar.util.market.Market;
 
-public interface IMarketData {
+public interface MarketData {
 
 	/**
 	 * 获取market的信息

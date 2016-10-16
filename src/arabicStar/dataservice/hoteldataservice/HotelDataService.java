@@ -1,6 +1,6 @@
 package arabicStar.dataservice.hoteldataservice;
 
-import arabicStar.data.hoteldata.IHotelData;
+import arabicStar.data.hoteldata.HotelData;
 import arabicStar.util.hotel.Hotel;
 
 /**
@@ -8,7 +8,7 @@ import arabicStar.util.hotel.Hotel;
  * @author Vivian
  *
  */
-public class HotelDataService implements IHotelData {
+public class HotelDataService implements HotelData {
 
 	/**
 	 * 获取酒店信息

@@ -3,7 +3,7 @@ package arabicStar.dataservice.marketdataservice;
 import arabicStar.data.marketdata.*;
 import arabicStar.util.market.Market;
 
-public class MarketDataService implements IMarketData{
+public class MarketDataService implements MarketData{
 
 	@Override
 	public Market getInfo() {

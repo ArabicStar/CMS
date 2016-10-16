@@ -1,6 +1,6 @@
 package arabicStar.dataservice.promotiondataservice;
 
-import arabicStar.data.promotiondata.IPromotionData;
+import arabicStar.data.promotiondata.PromotionData;
 import arabicStar.util.promotion.Promotion;
 
 /**
@@ -8,7 +8,7 @@ import arabicStar.util.promotion.Promotion;
  * @author Vivian
  *
  */
-public class PromotionDataService implements IPromotionData {
+public class PromotionDataService implements PromotionData {
 
 	/**
 	 * 获取促销策略信息

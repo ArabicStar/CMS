@@ -7,7 +7,7 @@ import arabicStar.util.hotel.Hotel;
  * @author Vivian
  *
  */
-public interface IHotelData {
+public interface HotelData {
 
 	public Hotel getInfo();
 

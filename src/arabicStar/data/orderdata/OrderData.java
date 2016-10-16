@@ -8,7 +8,7 @@ import arabicStar.util.order.Order;
  * @author WaterWan
  *
  */
-public interface IOrderData {
+public interface OrderData {
 	/**
 	 * 获取订单信息
 	 * @return 所需要的订单

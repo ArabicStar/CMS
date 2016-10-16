@@ -7,7 +7,7 @@ import arabicStar.util.promotion.Promotion;
  * @author Vivian
  *
  */
-public interface IPromotionData {
+public interface PromotionData {
 
 	public Promotion getDiscription();
 }
