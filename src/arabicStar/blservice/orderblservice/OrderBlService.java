@@ -1,6 +1,6 @@
 package arabicStar.blservice.orderblservice;
 
-import arabicStar.bl.orderbl.IOrderBL;
+import arabicStar.bl.orderbl.OrderBL;
 import arabicStar.util.order.Order;
 import arabicStar.vo.OrderInfo;
 import arabicStar.vo.ResultMessage;
@@ -9,7 +9,7 @@ import arabicStar.vo.ResultMessage;
  * @author WaterWan
  *
  */
-public class OrderBLService implements IOrderBL {
+public class OrderBLService implements OrderBL {
 	/**
 	 * 根据传入的值，生成一个新订单
 	 * @param 传入的订单信息
@@ -21,7 +21,7 @@ public class OrderBLService implements IOrderBL {
 		System.out.println("成功生成该订单");
 		return null;
 	}
-	
+
 	/**
 	 * 撤销传入的订单
 	 * @param order 需要撤销的订单
@@ -33,7 +33,7 @@ public class OrderBLService implements IOrderBL {
 		System.out.println("该订单已被撤销");
 		return null;
 	}
-	
+
 	/**
 	 * 延迟入住传入的订单
 	 * @param order 需要延迟的订单
@@ -45,7 +45,7 @@ public class OrderBLService implements IOrderBL {
 		System.out.println("用户延迟入住成功");
 		return null;
 	}
-	
+
 	/**
 	 * 使订单变为异常
 	 * @param order 需要变为异常的订单
@@ -57,7 +57,7 @@ public class OrderBLService implements IOrderBL {
 		System.out.println("该订单变为异常");
 		return null;
 	}
-	
+
 	/**
 	 * 执行订单
 	 * @param order 需要执行的订单
@@ -69,7 +69,7 @@ public class OrderBLService implements IOrderBL {
 		System.out.println("该订单已被执行");
 		return null;
 	}
-	
+
 	/**
 	 * 申诉撤销订单
 	 * @param order 需要申诉的订单

@@ -1,6 +1,6 @@
 package arabicStar.blservice.hotelblservice;
 
-import arabicStar.bl.hotelbl.IHotelBL;
+import arabicStar.bl.hotelbl.HotelBL;
 import arabicStar.util.hotel.Hotel;
 import arabicStar.util.hotel.Room;
 
@@ -9,7 +9,7 @@ import arabicStar.util.hotel.Room;
  * @author Vivian
  *
  */
-public class HotelBLService implements IHotelBL {
+public class HotelBLService implements HotelBL {
 
 	/**
 	 * 根据传入的房间信息，查看酒店剩余房间，入住指定房间
@@ -70,5 +70,5 @@ public class HotelBLService implements IHotelBL {
 		System.out.println("成功更新酒店数据");
 		return true;
 	}
-	
+
 }
