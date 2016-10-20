@@ -17,7 +17,7 @@ public class HotelDataServiceImpl_Stub implements HotelDataService {
 	 * @return 所需要的酒店
 	 */
 	@Override
-	public HotelPO getInfo() {
+	public HotelPO getInfo(int hotelID) {
 		// TODO Auto-generated method stub
 		System.out.println("Get INFO");
 		return null;

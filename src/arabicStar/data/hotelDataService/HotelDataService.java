@@ -11,7 +11,7 @@ import arabicStar.po.RoomPO;
  */
 public interface HotelDataService {
 
-	public HotelPO getInfo();
+	public HotelPO getInfo(int hotelID);
 
 	public double getRating();
 
