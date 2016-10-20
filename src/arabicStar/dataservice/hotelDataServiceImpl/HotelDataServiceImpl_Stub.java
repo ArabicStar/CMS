@@ -59,56 +59,48 @@ public class HotelDataServiceImpl_Stub implements HotelDataService {
 	@Override
 	public CommentPO[] getCommets() {
 		// TODO Auto-generated method stub
-		System.out.println("Get COMMENT");
 		return null;
 	}
 
 	@Override
 	public boolean insert(HotelPO po) {
 		// TODO Auto-generated method stub
-		System.out.println("INSERT");
 		return false;
 	}
 
 	@Override
 	public HotelPO find(int id) {
 		// TODO Auto-generated method stub
-		System.out.println("FIND");
 		return null;
 	}
 
 	@Override
 	public boolean delete(HotelPO po) {
 		// TODO Auto-generated method stub
-		System.out.println("Get INFO");
 		return false;
 	}
 
 	@Override
 	public boolean update(HotelPO po) {
 		// TODO Auto-generated method stub
-		System.out.println("UPDATE");
 		return false;
 	}
 
 	@Override
 	public boolean setRating(double rating) {
 		// TODO Auto-generated method stub
-		System.out.println("Set RATING");
 		return false;
 	}
 
 	@Override
 	public boolean addRooms(RoomPO[] rooms) {
 		// TODO Auto-generated method stub
-		System.out.println("Add ROOMS");
 		return false;
 	}
 
 	@Override
 	public boolean addComment(CommentPO comment) {
 		// TODO Auto-generated method stub
-		System.out.println("Add COMMENT");
 		return false;
 	}
 	
