@@ -29,4 +29,8 @@ public class ContactVO {
 		this.mobilePhone = mobilePhone;
 	}
 
+	@Override
+	public String toString() {
+		return "email: " + email + "\nmobile phone: " + mobilePhone + "\nfixed phone: " + fixedPhone;
+	}
 }

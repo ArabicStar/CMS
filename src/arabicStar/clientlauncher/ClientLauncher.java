@@ -14,13 +14,13 @@ public class ClientLauncher {
 	private ClientUIController uiController;
 	// private DataAccessObject dao;
 
-	private void init() {
+	public void init() {
 		logicController = new ClientLogicController();
 		uiController = new ClientUIController(logicController);
 		// dao=RMIHelper.getDAO; //DAO shall be retrieved from rmi
 	}
 
-	private void launch() {
+	public void launch() {
 		launchMemberModule();
 		launchMarketModule();
 	}
@@ -52,17 +52,21 @@ public class ClientLauncher {
 
 	private void launchMemberLogic() {
 		MemberLogicService memberBL = new MemberLogicServiceImpl_Stub(logicController, logicController);
-		logicController.setMemberLogicService(memberBL);
+		logicController.setMemberBL(memberBL);
 	}
 
-	private void start() {
+	public void start() {
 		uiController.start();
 	}
 
-	public static void main(String[] args) {
-		ClientLauncher launcher = new ClientLauncher();
-		launcher.init();
-		launcher.launch();
-		launcher.start();
+	public ClientLogicController getLogicController() {// just for debug
+		return logicController;
 	}
+	// public static void main(String[] args) {
+	// ClientLauncher launcher = new ClientLauncher();
+	// launcher.init();
+	// launcher.launch();
+	//// launcher.start();
+	// launcher.logicController.comment("aaaa");
+	// }
 }

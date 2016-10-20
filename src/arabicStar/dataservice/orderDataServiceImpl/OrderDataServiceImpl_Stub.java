@@ -2,6 +2,8 @@ package arabicStar.dataservice.orderDataServiceImpl;
 
 import java.util.Date;
 
+import arabicStar.blService.hotelBLService.HotelLogicService;
+import arabicStar.blService.promotionBLService.PromotionLogicService;
 import arabicStar.data.orderDataService.OrderDataService;
 import arabicStar.po.OrderPO;
 
@@ -12,6 +14,13 @@ import arabicStar.po.OrderPO;
  *
  */
 public class OrderDataServiceImpl_Stub implements OrderDataService {
+	private HotelLogicService hotelBL;
+	private PromotionLogicService promotionBL;
+
+	public OrderDataServiceImpl_Stub(HotelLogicService hotelBL, PromotionLogicService promotionBL) {
+		this.hotelBL = hotelBL;
+		this.promotionBL = promotionBL;
+	}
 
 	@Override
 	public OrderPO getInfo() {

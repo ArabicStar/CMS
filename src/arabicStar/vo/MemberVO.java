@@ -19,4 +19,9 @@ public class MemberVO {
 	public void setContact(ContactVO contact) {
 		this.contact = contact;
 	}
+
+	@Override
+	public String toString() {
+		return "name:" + name + "\ncontact:" + contact.toString();
+	}
 }

@@ -16,9 +16,11 @@ import arabicStar.vo.ResultMessage;
 
 public class ClientLogicController
 		implements HotelLogicService, MarketLogicService, MemberLogicService, OrderLogicService, PromotionLogicService {
-	private MemberLogicService memberLogicService;
 	private MarketLogicService marketBL;
 	private MemberLogicService memberBL;
+	private PromotionLogicService promotionBL;
+	private OrderLogicService orderBL;
+	private HotelLogicService hotelBL;
 
 	public ClientLogicController() {
 	}
@@ -28,9 +30,8 @@ public class ClientLogicController
 			this.marketBL = marketBL;
 	}
 
-	public void setMemberLogicService(MemberLogicService memberLogicService) {
-		if (this.memberBL == null)
-			this.memberLogicService = memberLogicService;
+	public void setMemberBL(MemberLogicService memberBL) {
+		this.memberBL = memberBL;
 	}
 
 	@Override
@@ -77,7 +78,7 @@ public class ClientLogicController
 
 	@Override
 	public ResultMessage updateInfo(MemberVO info) {
-		// TODO 自动生成的方法存根
+		System.out.println("user new info:\n" + info.toString());
 		return null;
 	}
 
@@ -95,7 +96,11 @@ public class ClientLogicController
 
 	@Override
 	public ResultMessage updateCredit(int increment) {
-		// TODO 自动生成的方法存根
+		int credit = 100;
+		System.out.println("Original credit is " + credit);
+		System.out.println("Increased by " + increment);
+		credit += increment;
+		System.out.println("Now is " + credit);
 		return null;
 	}
 
@@ -107,7 +112,6 @@ public class ClientLogicController
 
 	@Override
 	public ResultMessage updateInfo(Market market) {
-		// TODO 自动生成的方法存根
 		return null;
 	}
 
@@ -125,7 +129,7 @@ public class ClientLogicController
 
 	@Override
 	public boolean comment(String comments) {
-		// TODO 自动生成的方法存根
+		System.out.println(comments);
 		return false;
 	}
 
@@ -139,5 +143,17 @@ public class ClientLogicController
 	public boolean updateInfo(Hotel hotel) {
 		// TODO 自动生成的方法存根
 		return false;
+	}
+
+	public void setHotelBL(HotelLogicService hotelBL) {
+		this.hotelBL = hotelBL;
+	}
+
+	public void setOrderBL(OrderLogicService orderBL) {
+		this.orderBL = orderBL;
+	}
+
+	public void setPromotionBL(PromotionLogicService promotionBL) {
+		this.promotionBL = promotionBL;
 	}
 }
