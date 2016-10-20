@@ -31,4 +31,19 @@ public interface OrderDataService {
 	 * @return 申诉的信息
 	 */
 	public String getAppeal();
+	
+	public boolean insert(OrderPO po);
+	
+	public OrderPO find(int id);
+	
+	public boolean delete(OrderPO po);
+	
+	public boolean update(OrderPO po);
+	
+	/**
+	 * TODO:这里的Date是以后重新自己实现的
+	 * @param date
+	 * @return
+	 */
+	public boolean setTime(Date date);
 }

@@ -7,6 +7,7 @@ import arabicStar.blService.promotionBLService.PromotionLogicService;
 import arabicStar.data.orderDataService.OrderDataService;
 import arabicStar.po.OrderPO;
 
+<<<<<<< HEAD
 /**
  * 这是Order数据的实现
  * 
@@ -22,6 +23,9 @@ public class OrderDataServiceImpl_Stub implements OrderDataService {
 		this.promotionBL = promotionBL;
 	}
 
+=======
+public class OrderDataServiceImpl_Stub implements OrderDataService{
+>>>>>>> origin/CMS
 	@Override
 	public OrderPO getInfo() {
 		// TODO Auto-generated method stub
@@ -50,4 +54,38 @@ public class OrderDataServiceImpl_Stub implements OrderDataService {
 		return new String("Appeal");
 	}
 
+	@Override
+	public boolean insert(OrderPO po) {
+		// TODO Auto-generated method stub
+		System.out.println("INSERT ORDER");
+		return false;
+	}
+	
+	@Override
+	public OrderPO find(int id) {
+		// TODO Auto-generated method stub
+		System.out.println("FIND PO");
+		return null;
+	}
+
+	@Override
+	public boolean delete(OrderPO po) {
+		// TODO Auto-generated method stub
+		System.out.println("DELETE PO");
+		return false;
+	}
+
+	@Override
+	public boolean update(OrderPO po) {
+		// TODO Auto-generated method stub
+		System.out.println("UPDATE PO");
+		return false;
+	}
+
+	@Override
+	public boolean setTime(Date date) {
+		// TODO Auto-generated method stub
+		System.out.println("SET TIME");
+		return false;
+	}
 }
