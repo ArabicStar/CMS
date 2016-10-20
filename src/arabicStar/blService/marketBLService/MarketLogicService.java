@@ -1,4 +1,4 @@
-package arabicStar.bl.marketBLService;
+package arabicStar.blService.marketBLService;
 
 import arabicStar.util.market.Market;
 import arabicStar.vo.ResultMessage;

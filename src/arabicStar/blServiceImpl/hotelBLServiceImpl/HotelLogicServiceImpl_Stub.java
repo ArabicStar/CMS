@@ -1,6 +1,6 @@
-package arabicStar.blservice.hotelBLServiceImpl;
+package arabicStar.blServiceImpl.hotelBLServiceImpl;
 
-import arabicStar.bl.hotelBLService.HotelLogicService;
+import arabicStar.blService.hotelBLService.HotelLogicService;
 import arabicStar.util.hotel.Hotel;
 import arabicStar.util.hotel.Room;
 

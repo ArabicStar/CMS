@@ -1,8 +1,8 @@
-package arabicStar.blservice.queryBLServiceImpl;
+package arabicStar.blServiceImpl.queryBLServiceImpl;
 
 import java.util.List;
 
-import arabicStar.bl.queryBLService.QueryLogicService;
+import arabicStar.blService.queryBLService.QueryLogicService;
 import arabicStar.util.hotel.Hotel;
 import arabicStar.vo.SearchCondition;
 

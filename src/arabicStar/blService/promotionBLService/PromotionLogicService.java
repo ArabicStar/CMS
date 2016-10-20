@@ -1,4 +1,4 @@
-package arabicStar.bl.promotionBLService;
+package arabicStar.blService.promotionBLService;
 
 import arabicStar.util.order.Order;
 

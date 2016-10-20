@@ -1,6 +1,6 @@
-package arabicStar.blservice.orderBLServiceImpl;
+package arabicStar.blServiceImpl.orderBLServiceImpl;
 
-import arabicStar.bl.orderBLService.OrderLogicService;
+import arabicStar.blService.orderBLService.OrderLogicService;
 import arabicStar.util.order.Order;
 import arabicStar.vo.OrderVO;
 import arabicStar.vo.ResultMessage;

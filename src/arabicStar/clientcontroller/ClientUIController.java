@@ -1,26 +1,33 @@
 package arabicStar.clientcontroller;
 
 import arabicStar.mainui.ClientUI;
-import arabicStar.ui.memberui.MemberUIProvider;
+import arabicStar.marketui.MarketUIProvider;
 import arabicStar.uibase.ContentProvider;
 import arabicStar.uibase.UIController;
 import javafx.application.Application;
 
 public class ClientUIController implements UIController {
-	ContentProvider memberUiProvider;
+	private ContentProvider memberUI, marketUI;
+	private ContentProvider currentContent;
 
 	public ClientUIController(ClientLogicController logicController) {
-		init();
 	}
 
-	private void init() {
-		memberUiProvider = new MemberUIProvider();
+	public void start() {
 		ClientUI.setController(this);
 		Application.launch(ClientUI.class, "");
 	}
 
 	public ContentProvider getProvider(String tag) {
 		// stub
-		return memberUiProvider;
+		return memberUI;
+	}
+
+	public void setMarketUI(MarketUIProvider marketUI) {
+		this.marketUI = marketUI;
+	}
+
+	public void setMemberUI(ContentProvider memberUI) {
+		this.memberUI = memberUI;
 	}
 }

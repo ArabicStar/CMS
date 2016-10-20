@@ -1,4 +1,4 @@
-package arabicStar.bl.memberBLService;
+package arabicStar.blService.memberBLService;
 
 import arabicStar.vo.ContactVO;
 import arabicStar.vo.MemberVO;

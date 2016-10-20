@@ -1,4 +1,4 @@
-package arabicStar.bl.queryBLService;
+package arabicStar.blService.queryBLService;
 
 import java.util.List;
 

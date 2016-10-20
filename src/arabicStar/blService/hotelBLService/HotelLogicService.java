@@ -1,4 +1,4 @@
-package arabicStar.bl.hotelBLService;
+package arabicStar.blService.hotelBLService;
 
 import arabicStar.util.hotel.Hotel;
 import arabicStar.util.hotel.Room;

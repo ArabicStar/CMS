@@ -1,11 +1,20 @@
-package arabicStar.blservice.memberBLServiceImpl;
+package arabicStar.blServiceImpl.memberBLServiceImpl;
 
-import arabicStar.bl.memberBLService.MemberLogicService;
+import arabicStar.blService.memberBLService.MemberLogicService;
+import arabicStar.blService.orderBLService.OrderLogicService;
+import arabicStar.blService.promotionBLService.PromotionLogicService;
 import arabicStar.vo.ContactVO;
 import arabicStar.vo.MemberVO;
 import arabicStar.vo.ResultMessage;
 
 public class MemberLogicServiceImpl_Stub implements MemberLogicService {
+	private OrderLogicService orderBL;
+	private PromotionLogicService promotionBL;
+
+	public MemberLogicServiceImpl_Stub(OrderLogicService orderBL, PromotionLogicService promotionBL) {
+		this.orderBL = orderBL;
+		this.promotionBL = promotionBL;
+	}
 
 	@Override
 	public ResultMessage updateInfo(MemberVO info) {
@@ -29,7 +38,7 @@ public class MemberLogicServiceImpl_Stub implements MemberLogicService {
 		System.out.println("Credit gain!");
 		return new ResultMessage();
 	}
-	
+
 	@Override
 	public int getCredit() {
 		return 100;

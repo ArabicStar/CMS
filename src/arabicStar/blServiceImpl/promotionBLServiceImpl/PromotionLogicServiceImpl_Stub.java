@@ -1,6 +1,6 @@
-package arabicStar.blservice.promotionBLServiceImpl;
+package arabicStar.blServiceImpl.promotionBLServiceImpl;
 
-import arabicStar.bl.promotionBLService.PromotionLogicService;
+import arabicStar.blService.promotionBLService.PromotionLogicService;
 import arabicStar.util.order.Order;
 
 /**
