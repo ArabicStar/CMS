@@ -61,4 +61,11 @@ public class OrderDataServiceImpl_Stub implements OrderDataService{
 		System.out.println("UPDATE PO");
 		return false;
 	}
+
+	@Override
+	public boolean setTime(Date date) {
+		// TODO Auto-generated method stub
+		System.out.println("SET TIME");
+		return false;
+	}
 }

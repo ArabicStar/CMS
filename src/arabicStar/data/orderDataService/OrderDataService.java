@@ -39,4 +39,11 @@ public interface OrderDataService {
 	public boolean delete(OrderPO po);
 	
 	public boolean update(OrderPO po);
+	
+	/**
+	 * TODO:这里的Date是以后重新自己实现的
+	 * @param date
+	 * @return
+	 */
+	public boolean setTime(Date date);
 }
