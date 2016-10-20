@@ -5,14 +5,7 @@ import java.util.Date;
 import arabicStar.data.orderDataService.OrderDataService;
 import arabicStar.po.OrderPO;
 
-/**
- * 这是Order数据的实现
- * 
- * @author WaterWan
- *
- */
-public class OrderDataServiceImpl_Stub implements OrderDataService {
-
+public class OrderDataServiceImpl_Stub implements OrderDataService{
 	@Override
 	public OrderPO getInfo() {
 		// TODO Auto-generated method stub
@@ -41,4 +34,31 @@ public class OrderDataServiceImpl_Stub implements OrderDataService {
 		return new String("Appeal");
 	}
 
+	@Override
+	public boolean insert(OrderPO po) {
+		// TODO Auto-generated method stub
+		System.out.println("INSERT ORDER");
+		return false;
+	}
+	
+	@Override
+	public OrderPO find(int id) {
+		// TODO Auto-generated method stub
+		System.out.println("FIND PO");
+		return null;
+	}
+
+	@Override
+	public boolean delete(OrderPO po) {
+		// TODO Auto-generated method stub
+		System.out.println("DELETE PO");
+		return false;
+	}
+
+	@Override
+	public boolean update(OrderPO po) {
+		// TODO Auto-generated method stub
+		System.out.println("UPDATE PO");
+		return false;
+	}
 }

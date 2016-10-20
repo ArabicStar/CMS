@@ -31,4 +31,12 @@ public interface OrderDataService {
 	 * @return 申诉的信息
 	 */
 	public String getAppeal();
+	
+	public boolean insert(OrderPO po);
+	
+	public OrderPO find(int id);
+	
+	public boolean delete(OrderPO po);
+	
+	public boolean update(OrderPO po);
 }
