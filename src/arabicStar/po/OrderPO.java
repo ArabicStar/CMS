@@ -16,8 +16,7 @@ public class OrderPO {
 		return room;
 	}
 
-<<<<<<< HEAD
-=======
+
 	public String getNumber() {
 		return number;
 	}
@@ -42,5 +41,4 @@ public class OrderPO {
 		this.date = date;
 	}
 
->>>>>>> dffc68c4fc6929b146731518ee8dd0669c72eeec
 }
