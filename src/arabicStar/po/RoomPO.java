@@ -6,10 +6,14 @@ package arabicStar.po;
  *
  */
 public class RoomPO {
+	private String name;
+	private int price;
 	private int type;
 	private int number;
 	
-	public RoomPO(int type, int num){
+	public RoomPO(String name, int price, int type, int num){
+		this.name = name;
+		this.price = price;
 		this.type = type;
 		this.number = num;
 	}
@@ -20,6 +24,14 @@ public class RoomPO {
 	
 	public int getNumber(){
 		return number;
+	}
+	
+	public int getPrice(){
+		return price;
+	}
+	
+	public String getName(){
+		return name;
 	}
 
 }

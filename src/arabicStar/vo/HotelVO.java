@@ -1,11 +1,13 @@
-package arabicStar.po;
+package arabicStar.vo;
+
+import arabicStar.po.RoomPO;
 
 /**
- * This class is the PO of hotel
- * @author Vivian
+ * This class is the VO of hotel
+ * @author jqwu
  *
  */
-public class HotelPO {
+public class HotelVO {
 	private int star;
 	private String phone;
 	private String name;
@@ -14,7 +16,7 @@ public class HotelPO {
 	private double rating;
 	private RoomPO[] rooms;
 	
-	public HotelPO(String name, int star, String phone, String scope, String introduction, double rating, RoomPO[] rooms){
+	public HotelVO(String name, int star, String phone, String scope, String introduction, double rating, RoomPO[] rooms){
 		this.name = name;
 		this.star = star;
 		this.phone = phone;
@@ -47,7 +49,5 @@ public class HotelPO {
 	public int getStar(){
 		return star;
 	}
-	
-	
-	
+
 }
