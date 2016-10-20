@@ -1,7 +1,9 @@
 package arabicStar.dataservice.hotelDataServiceImpl;
 
 import arabicStar.data.hotelDataService.HotelDataService;
+import arabicStar.po.CommentPO;
 import arabicStar.po.HotelPO;
+import arabicStar.po.RoomPO;
 
 /**
  * 这是Hotel数据的方法实现
@@ -53,5 +55,54 @@ public class HotelDataServiceImpl_Stub implements HotelDataService {
 		System.out.println("Get STAR");
 		return 0;
 	}
+
+	@Override
+	public CommentPO[] getCommets() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean insert(HotelPO po) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public HotelPO find(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean delete(HotelPO po) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(HotelPO po) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean setRating(double rating) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean addRooms(RoomPO[] rooms) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean addComment(CommentPO comment) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
 
 }
