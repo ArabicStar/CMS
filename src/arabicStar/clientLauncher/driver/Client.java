@@ -1,7 +1,7 @@
 package arabicStar.clientLauncher.driver;
 
-import arabicStar.clientController.ClientLogicController;
-import arabicStar.clientLauncher.ClientLauncher;
+import arabicStar.clientcontroller.ClientLogicController;
+import arabicStar.clientlauncher.ClientLauncher;
 
 public class Client {
 	public static void main(String[] args) {

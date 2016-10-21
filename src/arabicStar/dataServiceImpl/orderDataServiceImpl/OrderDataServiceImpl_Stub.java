@@ -41,4 +41,28 @@ public class OrderDataServiceImpl_Stub implements OrderDataService {
 		return new String("Appeal");
 	}
 
+	@Override
+	public boolean insertOrder(OrderPO orderPO) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public OrderPO deleteOrder(String orderID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public OrderPO findOrder(String orderID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean updateOrder(OrderPO orderPO) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

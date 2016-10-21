@@ -3,6 +3,7 @@ package arabicStar.dataService.orderDataService;
 import java.util.Date;
 
 import arabicStar.po.OrderPO;
+import arabicStar.util.order.Order;
 /**
  * 这是Order数据的接口
  * @author WaterWan
@@ -31,4 +32,12 @@ public interface OrderDataService {
 	 * @return 申诉的信息
 	 */
 	public String getAppeal();
+	
+	public boolean insertOrder(OrderPO orderPO);
+	
+	public OrderPO deleteOrder(String orderID);
+	
+	public OrderPO findOrder(String orderID);
+	
+	public boolean updateOrder(OrderPO orderPO);
 }
