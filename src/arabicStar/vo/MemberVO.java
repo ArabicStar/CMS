@@ -4,6 +4,7 @@ public class MemberVO {
 	private String name;
 	private ContactVO contact;
 
+	
 	public ContactVO getContact() {
 		return contact;
 	}
