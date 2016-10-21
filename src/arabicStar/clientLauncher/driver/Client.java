@@ -12,6 +12,5 @@ public class Client {
 		ClientLogicController controller = launcher.getLogicController();
 
 		new MemberLogicService_Driver().driver(controller);
-		new HotelLogicService_Driver().driver(controller);
 	}
 }

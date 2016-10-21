@@ -11,21 +11,29 @@ import arabicStar.po.RoomPO;
  */
 public interface HotelDataService {
 
-	public HotelPO getInfo(int hotelID);
+	public HotelPO getInfo();
+
+	public double getRating();
+
+	public double getCheap();
 	
-	public double getCheap(int hotelID);
+	public int getStar();
+	
+	public CommentPO[] getCommets();
 	
 	public boolean insert(HotelPO po);
 	
-	public HotelPO[] find(String scope);
+	public HotelPO find(int id);
 	
-	public boolean delete(int hotelID);
+	public boolean delete(HotelPO po);
 	
-	public boolean update(int hotelID,HotelPO po);
+	public boolean update(HotelPO po);
 	
-	public boolean addRooms(int hotelID,RoomPO[] rooms);
+	public boolean setRating(double rating);
 	
-	public boolean addComment(int hotelID,CommentPO comment);
+	public boolean addRooms(RoomPO[] rooms);
+	
+	public boolean addComment(CommentPO comment);
 	
 	
 }

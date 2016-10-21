@@ -1,15 +1,19 @@
 package arabicStar.dataService.memberDataService;
 
+import arabicStar.po.CreditChangePO;
 import arabicStar.po.MemberPO;
-import arabicStar.util.member.Member;
-import arabicStar.vo.ResultMessage;
 
 public interface MemberDataService {
-	public ResultMessage newMember(MemberPO newMember);
+	public boolean insertMember(MemberPO newMember);
 
-	public MemberPO getMember(int id);
+	public MemberPO deleteMember(String memberID);
 
-	public ResultMessage updateCredit(Member member, int increment);
+	public MemberPO findMember(String memberID);
 
-	public ResultMessage getCreditRecord(Member member);
+	public boolean updateMember(MemberPO member);
+
+	public MemberPO updateCredit(String memberID, int valChange);
+
+	public CreditChangePO[] getCreditChanges(String memberID);
+
 }

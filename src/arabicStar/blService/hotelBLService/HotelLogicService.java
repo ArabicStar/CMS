@@ -1,8 +1,7 @@
 package arabicStar.blService.hotelBLService;
 
-import arabicStar.vo.CommentVO;
-import arabicStar.vo.HotelVO;
-import arabicStar.vo.RoomVO;
+import arabicStar.util.hotel.Hotel;
+import arabicStar.util.hotel.Room;
 /**
  * 这是Hotel逻辑的接口
  * @author jqwu
@@ -10,21 +9,14 @@ import arabicStar.vo.RoomVO;
  */
 public interface HotelLogicService {
 
-	public boolean checkIn(RoomVO room);
+	public boolean checkIn(Room room);
 	
-	public boolean checkIn(int orderID);
-	
-	public boolean checkOut(RoomVO room);	
-	
-	public boolean comment(CommentVO comment);
+	public boolean checkOut(Room room);	
 
-	public CommentVO[] getComments(int hotelID);
+	public boolean comment(String comments);
+
+	public boolean add(Hotel hotel);
 	
-	public boolean updateInfo(HotelVO hotel);
-	
-	public HotelVO[] search(String scope);
-	
-	public HotelVO[] sort(HotelVO[] hotels, String sortType);
-	
+	public boolean updateInfo(Hotel hotel);
 
 }

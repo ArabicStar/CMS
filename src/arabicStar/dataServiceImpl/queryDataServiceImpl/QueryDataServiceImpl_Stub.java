@@ -2,7 +2,7 @@ package arabicStar.dataServiceImpl.queryDataServiceImpl;
 
 import java.util.List;
 
-import arabicStar.data.queryDataService.QueryDataService;
+import arabicStar.dataService.queryDataService.QueryDataService;
 import arabicStar.vo.SearchCondition;
 
 public class QueryDataServiceImpl_Stub implements QueryDataService {

@@ -9,13 +9,10 @@ import arabicStar.util.hotel.Hotel;
 import arabicStar.util.hotel.Room;
 import arabicStar.util.market.Market;
 import arabicStar.util.order.Order;
-import arabicStar.vo.CommentVO;
 import arabicStar.vo.ContactVO;
-import arabicStar.vo.HotelVO;
 import arabicStar.vo.MemberVO;
 import arabicStar.vo.OrderVO;
 import arabicStar.vo.ResultMessage;
-import arabicStar.vo.RoomVO;
 
 public class ClientLogicController
 		implements HotelLogicService, MarketLogicService, MemberLogicService, OrderLogicService, PromotionLogicService {
@@ -39,130 +36,124 @@ public class ClientLogicController
 
 	@Override
 	public Order apply(Order order) {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public Order born(OrderVO orderInfo) {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public ResultMessage die(Order order) {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public ResultMessage cure(Order order) {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public ResultMessage ill(Order order) {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public ResultMessage ripe(Order order) {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public ResultMessage cancel(Order order) {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public ResultMessage updateInfo(MemberVO info) {
-		// TODO Auto-generated method stub
+		System.out.println("user new info:\n" + info.toString());
 		return null;
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public ContactVO getContact() {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return null;
 	}
 
 	@Override
 	public ResultMessage updateCredit(int increment) {
-		// TODO Auto-generated method stub
+		int credit = 100;
+		System.out.println("Original credit is " + credit);
+		System.out.println("Increased by " + increment);
+		credit += increment;
+		System.out.println("Now is " + credit);
 		return null;
 	}
 
 	@Override
 	public int getCredit() {
-		// TODO Auto-generated method stub
+		// TODO 自动生成的方法存根
 		return 0;
 	}
 
 	@Override
 	public ResultMessage updateInfo(Market market) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public boolean checkIn(RoomVO room) {
-		// TODO Auto-generated method stub
+	public boolean checkIn(Room room) {
+		// TODO 自动生成的方法存根
 		return false;
 	}
 
 	@Override
-	public boolean checkOut(RoomVO room) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-
-	@Override
-	public boolean updateInfo(HotelVO hotel) {
-		// TODO Auto-generated method stub
+	public boolean checkOut(Room room) {
+		// TODO 自动生成的方法存根
 		return false;
 	}
 
 	@Override
-	public boolean checkIn(int orderID) {
-		// TODO Auto-generated method stub
+	public boolean comment(String comments) {
+		System.out.println(comments);
 		return false;
 	}
 
 	@Override
-	public CommentVO[] getComments(int hotelID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public HotelVO[] search(String scope) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public HotelVO[] sort(HotelVO[] hotels, String sortType) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean comment(CommentVO comment) {
-		// TODO Auto-generated method stub
+	public boolean add(Hotel hotel) {
+		// TODO 自动生成的方法存根
 		return false;
 	}
 
-	
+	@Override
+	public boolean updateInfo(Hotel hotel) {
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	public void setHotelBL(HotelLogicService hotelBL) {
+		this.hotelBL = hotelBL;
+	}
+
+	public void setOrderBL(OrderLogicService orderBL) {
+		this.orderBL = orderBL;
+	}
+
+	public void setPromotionBL(PromotionLogicService promotionBL) {
+		this.promotionBL = promotionBL;
+	}
 }

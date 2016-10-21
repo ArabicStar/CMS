@@ -1,6 +1,6 @@
 package arabicStar.dataServiceImpl.promotionDataServiceImpl;
 
-import arabicStar.data.promotionDataService.PromotionDataService;
+import arabicStar.dataService.promotionDataService.PromotionDataService;
 import arabicStar.util.promotion.Promotion;
 
 /**

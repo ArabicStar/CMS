@@ -1,4 +1,4 @@
-package arabicStar.memberui;
+package arabicStar.ui.memberui;
 
 import arabicStar.blService.memberBLService.MemberLogicService;
 import arabicStar.uiBase.ContentProvider;

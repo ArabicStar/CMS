@@ -14,9 +14,9 @@ public class HotelVO {
 	private String scope;
 	private String introduction;
 	private double rating;
-	private RoomVO[] rooms;
+	private RoomPO[] rooms;
 	
-	public HotelVO(String name, int star, String phone, String scope, String introduction, double rating, RoomVO[] rooms){
+	public HotelVO(String name, int star, String phone, String scope, String introduction, double rating, RoomPO[] rooms){
 		this.name = name;
 		this.star = star;
 		this.phone = phone;

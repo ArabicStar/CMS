@@ -1,6 +1,6 @@
 package arabicStar.dataServiceImpl.marketDataServiceImpl;
 
-import arabicStar.data.marketDataService.MarketDataService;
+import arabicStar.dataService.marketDataService.MarketDataService;
 import arabicStar.util.market.Market;
 
 public class MarketDataServiceImpl_Stub implements MarketDataService{
