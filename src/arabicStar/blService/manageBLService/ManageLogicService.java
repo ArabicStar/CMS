@@ -3,6 +3,7 @@ package arabicStar.blService.manageBLService;
 import arabicStar.vo.HotelVO;
 import arabicStar.vo.MarketVO;
 import arabicStar.vo.MemberVO;
+import arabicStar.vo.UserVO;
 
 public interface ManageLogicService {
 
@@ -20,9 +21,9 @@ public interface ManageLogicService {
 	
 	public boolean updateHotel(int hotelID,HotelVO hotel);
 	
-	public boolean addMarket(MarketVO market);
+	public boolean addMarket(UserVO market);
 	
 	public boolean findMarket(int marketID);
 	
-	public boolean updateMarket(int marketID,MarketVO market);
+	public boolean updateMarket(int marketID,UserVO market);
 }
