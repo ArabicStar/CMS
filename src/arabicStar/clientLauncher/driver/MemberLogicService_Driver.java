@@ -1,4 +1,4 @@
-package arabicStar.clientLauncher.driver;
+package arabicStar.clientlauncher.driver;
 
 import arabicStar.blService.memberBLService.MemberLogicService;
 import arabicStar.vo.ContactVO;

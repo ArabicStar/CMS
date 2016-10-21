@@ -1,6 +1,7 @@
 package arabicStar.dataServiceImpl.promotionDataServiceImpl;
 
 import arabicStar.dataService.promotionDataService.PromotionDataService;
+import arabicStar.po.PromotionPO;
 import arabicStar.util.promotion.Promotion;
 
 /**
@@ -15,10 +16,36 @@ public class PromotionDataServiceImpl_Stub implements PromotionDataService {
 	 * @return 返回促销策略名称与介绍
 	 */
 	@Override
-	public Promotion getDiscription() {
+	public PromotionPO getDiscription() {
 		// TODO Auto-generated method stub
 		System.out.println("获取描述成功");
 		return null;
+	}
+
+
+
+	@Override
+	public boolean insertPromotion(PromotionPO promotionPO) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public PromotionPO deletePromotion(PromotionPO promotionPO) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PromotionPO findPromotion(PromotionPO promotionPO) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean updatePromotion(PromotionPO promotionPO) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

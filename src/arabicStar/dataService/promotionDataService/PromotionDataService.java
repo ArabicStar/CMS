@@ -1,6 +1,6 @@
 package arabicStar.dataService.promotionDataService;
 
-import arabicStar.util.promotion.Promotion;
+import arabicStar.po.PromotionPO;
 
 /**
  * 这是Promotion的数据接口
@@ -9,5 +9,13 @@ import arabicStar.util.promotion.Promotion;
  */
 public interface PromotionDataService {
 
-	public Promotion getDiscription();
+	public PromotionPO getDiscription();
+	
+	public boolean insertPromotion(PromotionPO promotionPO);
+	
+	public PromotionPO deletePromotion(PromotionPO promotionPO);
+	
+	public PromotionPO findPromotion(PromotionPO promotionPO);
+	
+	public boolean updatePromotion(PromotionPO promotionPO);
 }
