@@ -127,20 +127,39 @@ public class ClientLogicController
 		return false;
 	}
 
-	@Override
-	public boolean comment(CommentVO comment) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean add(HotelVO hotel) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
 	@Override
 	public boolean updateInfo(HotelVO hotel) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkIn(int orderID) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public CommentVO[] getComments(int hotelID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public HotelVO[] search(String scope) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public HotelVO[] sort(HotelVO[] hotels, String sortType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean comment(CommentVO comment) {
 		// TODO Auto-generated method stub
 		return false;
 	}

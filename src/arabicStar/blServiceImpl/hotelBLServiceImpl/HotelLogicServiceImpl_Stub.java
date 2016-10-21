@@ -13,11 +13,6 @@ import arabicStar.vo.RoomVO;
  *
  */
 public class HotelLogicServiceImpl_Stub implements HotelLogicService {
-	private PromotionLogicService promotionBL;
-
-	public HotelLogicServiceImpl_Stub(PromotionLogicService promotionBL) {
-		this.promotionBL = promotionBL;
-	}
 
 	/**
 	 * 根据传入的房间信息，查看酒店剩余房间，入住指定房间
@@ -49,22 +44,10 @@ public class HotelLogicServiceImpl_Stub implements HotelLogicService {
 	 * @return 返回评论结果 TODO: 传入用户的评价与评分VO，现暂时用String替代
 	 */
 	@Override
-	public boolean comment(CommentVO comment) {
+	public CommentVO[] getComments(int hotelID) {
 		// TODO Auto-generated method stub
-		System.out.println(comment.getMember()+"在"+comment.getTime()+"评价"+comment.getHotel()+" : "+comment.getContent());
-		return true;
-	}
-
-	/**
-	 * 网络管理人员完整填写酒店信息后，在酒店列表里新增酒店
-	 * 
-	 * @return 返回新增结果 TODO: 传入完整酒店信息
-	 */
-	@Override
-	public boolean add(HotelVO hotel) {
-		// TODO Auto-generated method stub
-		System.out.println("成功"+hotel.getName());
-		return true;
+//		System.out.println(comment.getMember()+"在"+comment.getTime()+"评价"+comment.getHotel()+" : "+comment.getContent());
+		return null;
 	}
 
 	/**
@@ -77,6 +60,47 @@ public class HotelLogicServiceImpl_Stub implements HotelLogicService {
 		// TODO Auto-generated method stub
 		System.out.println("成功更新"+hotel.getName()+"数据");
 		return true;
+	}
+
+	
+	/**
+	 * 订单执行
+	 * 
+	 * @return 返回入住结果
+	 */
+	@Override
+	public boolean checkIn(int orderID) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	/**
+	 * 根据商圈搜索酒店
+	 * 
+	 * @return 返回酒店vo列表
+	 */
+	@Override
+	public HotelVO[] search(String scope) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 * 根据排序方式给酒店重新排序
+	 * 
+	 * @return 返回酒店vo列表
+	 */
+	@Override
+	public HotelVO[] sort(HotelVO[] hotels, String sortType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean comment(CommentVO comment) {
+		// TODO Auto-generated method stub
+		System.out.println(comment.getMember()+"在"+comment.getTime()+"评价"+comment.getHotel()+" : "+comment.getContent());
+		return false;
 	}
 
 }
