@@ -1,4 +1,4 @@
-package arabicStar.clientLauncher;
+package arabicStar.clientlauncher;
 
 import arabicStar.blService.hotelBLService.HotelLogicService;
 import arabicStar.blService.marketBLService.MarketLogicService;
@@ -10,8 +10,8 @@ import arabicStar.blServiceImpl.marketBLServiceImpl.MarketLogicServiceImpl_Stub;
 import arabicStar.blServiceImpl.memberBLServiceImpl.MemberLogicServiceImpl_Stub;
 import arabicStar.blServiceImpl.orderBLServiceImpl.OrderLogicServiceImpl_Stub;
 import arabicStar.blServiceImpl.promotionBLServiceImpl.PromotionLogicServiceImpl_Stub;
-import arabicStar.clientController.ClientLogicController;
-import arabicStar.clientController.ClientUIController;
+import arabicStar.clientcontroller.ClientLogicController;
+import arabicStar.clientcontroller.ClientUIController;
 import arabicStar.ui.marketui.MarketUIProvider;
 import arabicStar.ui.memberui.MemberUIProvider;
 
