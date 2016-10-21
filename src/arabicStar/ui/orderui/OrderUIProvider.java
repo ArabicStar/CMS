@@ -1,6 +1,6 @@
 package arabicStar.ui.orderui;
 
-import arabicStar.uibase.ContentProvider;
+import arabicStar.uiBase.ContentProvider;
 import javafx.event.Event;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;

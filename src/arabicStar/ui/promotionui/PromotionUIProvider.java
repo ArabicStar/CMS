@@ -1,13 +1,12 @@
 package arabicStar.ui.promotionui;
 
-import arabicStar.uibase.ContentProvider;
+import arabicStar.uiBase.ContentProvider;
 import javafx.event.Event;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 
 /**
- * 参考组长的写法
  * @author WaterWan
  *
  */
