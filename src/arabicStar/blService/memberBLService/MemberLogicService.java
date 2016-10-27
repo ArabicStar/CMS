@@ -1,8 +1,8 @@
 package arabicStar.blService.memberBLService;
 
-import arabicStar.vo.ContactVO;
+import arabicStar.vo.CreditChangeVO;
 import arabicStar.vo.MemberVO;
-import arabicStar.vo.ResultMessage;
+import arabicStar.vo.OrderVO;
 
 /**
  * @author tinke
@@ -10,33 +10,12 @@ import arabicStar.vo.ResultMessage;
  *         Business logic interface of member module
  */
 public interface MemberLogicService {
+	public boolean updateInfo(MemberVO info);
 
-	/**
-	 * @param info
-	 *            pack of member's info to be modified
-	 * @return result of operation
-	 */
-	public ResultMessage updateInfo(MemberVO info);
+	public MemberVO getMemberInfo(String id);
 
-	/**
-	 * @return member's name
-	 */
-	public String getName();
+	public CreditChangeVO[] getCreditChanges(String id);
 
-	/**
-	 * @return member's contact info
-	 */
-	public ContactVO getContact();
+	public OrderVO[] getOrderHistory(String id);
 
-	/**
-	 * @param increment
-	 *            increment of credit
-	 * @return result of operation
-	 */
-	public ResultMessage updateCredit(int increment);
-
-	/**
-	 * @return member's credit
-	 */
-	public int getCredit();
 }

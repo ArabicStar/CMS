@@ -1,4 +1,4 @@
-package arabicStar.clientlauncher.driver;
+package arabicStar.clientLauncher.driver;
 
 import arabicStar.blService.memberBLService.MemberLogicService;
 import arabicStar.vo.ContactVO;
@@ -7,7 +7,6 @@ import arabicStar.vo.MemberVO;
 public class MemberLogicService_Driver {
 
 	public void driver(MemberLogicService controller) {
-		controller.updateCredit(100);
 
 		ContactVO c = new ContactVO();
 		c.setEmail("123@qq.com");

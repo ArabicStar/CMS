@@ -3,8 +3,9 @@ package arabicStar.blServiceImpl.marketBLServiceImpl;
 import arabicStar.blService.hotelBLService.HotelLogicService;
 import arabicStar.blService.marketBLService.MarketLogicService;
 import arabicStar.blService.memberBLService.MemberLogicService;
-import arabicStar.util.market.Market;
-import arabicStar.vo.ResultMessage;
+import arabicStar.vo.CreditChangeVO;
+import arabicStar.vo.OrderVO;
+import arabicStar.vo.PromotionVO;
 
 public class MarketLogicServiceImpl_Stub implements MarketLogicService {
 	private MemberLogicService memberBL;
@@ -15,16 +16,57 @@ public class MarketLogicServiceImpl_Stub implements MarketLogicService {
 		this.hotelBL = hotelBL;
 	}
 
-	/**
-	 * 根据传入的market信息，更新数据库中的网站营销信息
-	 * 
-	 * @return 返回操作结果提示
-	 * @return 修改的提示信息 TODO:返回值类型为ResultMessage
-	 */
 	@Override
-	public ResultMessage updateInfo(Market market) {
-		// TODO Auto-generated method stub
-		System.out.println("信息更新成功！");
+	public boolean makeNewPromotion(PromotionVO newPromotion) {
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public PromotionVO[] getCurrentPromotion() {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public boolean deletePromotion(String id) {
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public boolean updatePromotion(PromotionVO changedPromotion) {
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public PromotionVO getPromotion(String id) {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public OrderVO[] getAbnormalOrders() {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public OrderVO findAbnornalOrder(String orderID) {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public boolean rescueOrder(String orderID) {
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public CreditChangeVO chargeCredit(int money) {
+		// TODO 自动生成的方法存根
 		return null;
 	}
 

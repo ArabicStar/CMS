@@ -4,7 +4,9 @@ import arabicStar.blService.memberBLService.MemberLogicService;
 import arabicStar.blService.orderBLService.OrderLogicService;
 import arabicStar.blService.promotionBLService.PromotionLogicService;
 import arabicStar.vo.ContactVO;
+import arabicStar.vo.CreditChangeVO;
 import arabicStar.vo.MemberVO;
+import arabicStar.vo.OrderVO;
 import arabicStar.vo.ResultMessage;
 
 public class MemberLogicServiceImpl_Stub implements MemberLogicService {
@@ -17,31 +19,27 @@ public class MemberLogicServiceImpl_Stub implements MemberLogicService {
 	}
 
 	@Override
-	public ResultMessage updateInfo(MemberVO info) {
-		System.out.println("Update Info success!");
-		return new ResultMessage();
+	public MemberVO getMemberInfo(String id) {
+		// TODO 自动生成的方法存根
+		return null;
 	}
 
 	@Override
-	public String getName() {
-		return "Jack";
+	public CreditChangeVO[] getCreditChanges(String id) {
+		// TODO 自动生成的方法存根
+		return null;
 	}
 
 	@Override
-	public ContactVO getContact() {
-		System.out.println("Acquiring contact info");
-		return new ContactVO();
+	public OrderVO[] getOrderHistory(String id) {
+		// TODO 自动生成的方法存根
+		return null;
 	}
 
 	@Override
-	public ResultMessage updateCredit(int increment) {
-		System.out.println("Credit gain!");
-		return new ResultMessage();
-	}
-
-	@Override
-	public int getCredit() {
-		return 100;
+	public boolean updateInfo(MemberVO info) {
+		// TODO 自动生成的方法存根
+		return false;
 	}
 
 }

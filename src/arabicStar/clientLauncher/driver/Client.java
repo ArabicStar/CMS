@@ -1,7 +1,7 @@
-package arabicStar.clientlauncher.driver;
+package arabicStar.clientLauncher.driver;
 
-import arabicStar.clientcontroller.ClientLogicController;
-import arabicStar.clientlauncher.ClientLauncher;
+import arabicStar.clientController.ClientLogicController;
+import arabicStar.clientLauncher.ClientLauncher;
 
 public class Client {
 	public static void main(String[] args) {
@@ -12,5 +12,6 @@ public class Client {
 		ClientLogicController controller = launcher.getLogicController();
 
 		new MemberLogicService_Driver().driver(controller);
+		new MarketLogicService_Driver().drive(controller);
 	}
 }
