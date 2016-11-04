@@ -1,4 +1,4 @@
-package arabicStar.clientcontroller;
+package arabicStar.clientController;
 
 import arabicStar.mainUI.ClientUI;
 import arabicStar.ui.marketui.MarketUIProvider;

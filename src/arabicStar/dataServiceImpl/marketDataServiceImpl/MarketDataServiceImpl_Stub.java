@@ -1,14 +1,13 @@
 package arabicStar.dataServiceImpl.marketDataServiceImpl;
 
 import arabicStar.dataService.marketDataService.MarketDataService;
-import arabicStar.util.market.Market;
+import arabicStar.po.CreditChangePO;
 
-public class MarketDataServiceImpl_Stub implements MarketDataService{
+public class MarketDataServiceImpl_Stub implements MarketDataService {
 
 	@Override
-	public Market getInfo() {
-		// TODO Auto-generated method stub
-		System.out.println("成功获取信息！");
+	public CreditChangePO updateCredit(String id, int change) {
+		// TODO 自动生成的方法存根
 		return null;
 	}
 

@@ -15,7 +15,7 @@ public class MemberDataServiceImpl_Stub implements MemberDataService {
 
 	public MemberPO getMember(int id) {
 		System.out.println("Looking up member...");
-		return new MemberPO();
+		return null;
 	}
 
 	public ResultMessage updateCredit(Member member, int increment) {

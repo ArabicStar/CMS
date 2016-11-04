@@ -1,19 +1,10 @@
-package arabicStar.blService.memberBLService;
+package arabicStar.memberLogic;
 
 import arabicStar.vo.CreditChangeVO;
 import arabicStar.vo.MemberVO;
 import arabicStar.vo.OrderVO;
 
-/**
- * @author tinke
- * 
- *         Business logic interface of member module
- */
-public interface MemberLogicService {
-	public boolean login(MemberVO member);
-
-	public boolean register(MemberVO member);
-
+public interface MemberInfoService {
 	public boolean updateInfo(MemberVO info);
 
 	public MemberVO getMemberInfo(String id);

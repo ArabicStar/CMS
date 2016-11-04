@@ -1,11 +1,11 @@
 package arabicStar.ui.marketui;
 
 import arabicStar.blService.marketBLService.MarketLogicService;
+import arabicStar.uiBase.ContentAccessor;
 import arabicStar.uiBase.ContentProvider;
-import javafx.event.Event;
-import javafx.scene.Scene;
+import javafx.scene.Node;
 
-public class MarketUIProvider implements ContentProvider {
+public class MarketUIProvider extends ContentProvider {
 	private MarketLogicService marketBL;
 
 	public MarketUIProvider(MarketLogicService marketBL) {
@@ -13,15 +13,11 @@ public class MarketUIProvider implements ContentProvider {
 	}
 
 	@Override
-	public boolean ready(Event e) {
-		// TODO 自动生成的方法存根
-		return false;
-	}
-
-	@Override
-	public Scene prepareContent() {
+	protected ContentAccessor getAccessor() {
 		// TODO 自动生成的方法存根
 		return null;
 	}
+
+
 
 }

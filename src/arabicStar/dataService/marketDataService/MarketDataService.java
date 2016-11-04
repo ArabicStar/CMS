@@ -1,13 +1,7 @@
 package arabicStar.dataService.marketDataService;
 
-import arabicStar.util.market.Market;
+import arabicStar.po.CreditChangePO;
 
 public interface MarketDataService {
-
-	/**
-	 * 获取market的信息
-	 * @return market的信息
-	 * TODO:返回值类型为InfoVO
-	 */
-	public Market getInfo();
+	public CreditChangePO updateCredit(String id, int change);
 }

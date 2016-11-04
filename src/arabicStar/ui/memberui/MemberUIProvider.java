@@ -1,13 +1,11 @@
 package arabicStar.ui.memberui;
 
 import arabicStar.blService.memberBLService.MemberLogicService;
+import arabicStar.uiBase.ContentAccessor;
 import arabicStar.uiBase.ContentProvider;
-import javafx.event.Event;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
+import javafx.scene.Node;
 
-public class MemberUIProvider implements ContentProvider {
+public class MemberUIProvider extends ContentProvider {
 	private MemberLogicService memberBL;
 
 	public MemberUIProvider(MemberLogicService memberBL) {
@@ -15,17 +13,9 @@ public class MemberUIProvider implements ContentProvider {
 	}
 
 	@Override
-	public boolean ready(Event e) {
-		// stub
-		return true;
+	public ContentAccessor getAccessor() {
+		// TODO 自动生成的方法存根
+		return null;
 	}
 
-	@Override
-	public Scene prepareContent() {
-		// stub
-		StackPane p = new StackPane();
-		Label l = new Label("Done");
-		p.getChildren().add(l);
-		return new Scene(p, 300, 300);
-	}
 }

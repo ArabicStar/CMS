@@ -1,33 +1,60 @@
 package arabicStar.po;
 
-public class ContactPO {
+import arabicStar.util.info.member.ContactInfo;
 
-	private String email;
-	private String mobilePhone;
-	private String fixedPhone;
+/**
+ * PO of contact<br>
+ * use builder to instantiate<br>
+ * no public setter, setter only for builder.<br>
+ * If needed, use ContactPOBuilder(ContactPO) to edit<br>
+ * 
+ * @author ClevelandAlto
+ *
+ */
+public class ContactPO extends ContactInfo {
 
+	@Override
+	public String getID() {
+		return id;
+	}
+
+	@Override
 	public String getEmail() {
 		return email;
 	}
 
+	@Override
 	public String getFixedPhone() {
 		return fixedPhone;
 	}
 
+	@Override
 	public String getMobilePhone() {
 		return mobilePhone;
 	}
 
-	public void setEmail(String email) {
+	ContactPO setID(String id) {
+		this.id = id;
+		return this;
+	}
+
+	ContactPO setEmail(String email) {
 		this.email = email;
+		return this;
 	}
 
-	public void setFixedPhone(String fixedPhone) {
+	ContactPO setFixedPhone(String fixedPhone) {
 		this.fixedPhone = fixedPhone;
+		return this;
 	}
 
-	public void setMobilePhone(String mobilePhone) {
+	ContactPO setMobilePhone(String mobilePhone) {
 		this.mobilePhone = mobilePhone;
+		return this;
 	}
 
+	@Override
+	public String toString() {
+		return "email: " + email + "\nmobile phone: " + mobilePhone + "\nfixed phone: " + fixedPhone;
+	}
 }

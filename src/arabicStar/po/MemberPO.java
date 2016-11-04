@@ -1,24 +1,64 @@
 package arabicStar.po;
 
+import java.time.LocalDate;
 
-public class MemberPO {
+import arabicStar.util.info.member.ContactInfo;
+import arabicStar.util.info.member.MemberInfo;
 
-	private String name;
-	private ContactPO contact;
+public class MemberPO extends MemberInfo {
+	private String passwordHash;
 
-	public ContactPO getContact() {
-		return contact;
+	MemberPO() {
 	}
 
+
+	@Override
+	public String getID() {
+		return id;
+	}
+
+	@Override
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	@Override
+	public ContactInfo getContact() {
+		return new ContactPOBuilder(contact).getContactPO();
 	}
 
-	public void setContact(ContactPO contact) {
+	@Override
+	public LocalDate getBirthday() {
+		return birthday;
+	}
+
+	public String getPasswordHash() {
+		return passwordHash;
+	}
+
+
+	MemberPO setId(String id) {
+		this.id = id;
+		return this;
+	}
+
+	MemberPO setName(String name) {
+		this.name = name;
+		return this;
+	}
+
+	MemberPO setPasswordHash(String passwordHash) {
+		this.passwordHash = passwordHash;
+		return this;
+	}
+
+	MemberPO setContact(ContactPO contact) {
 		this.contact = contact;
+		return this;
+	}
+
+	MemberPO setBirthday(LocalDate birthday) {
+		this.birthday = birthday;
+		return this;
 	}
 }

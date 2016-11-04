@@ -1,7 +1,8 @@
-package arabicStar.blService.memberBLService;
+package arabicStar.memberLogicService;
 
 import arabicStar.vo.CreditChangeVO;
 import arabicStar.vo.MemberVO;
+import arabicStar.vo.MemberVOBuilder;
 import arabicStar.vo.OrderVO;
 
 /**
@@ -10,9 +11,9 @@ import arabicStar.vo.OrderVO;
  *         Business logic interface of member module
  */
 public interface MemberLogicService {
-	public boolean login(MemberVO member);
+	public boolean login(String id, String passwordHash);
 
-	public boolean register(MemberVO member);
+	public boolean register(MemberVOBuilder member);
 
 	public boolean updateInfo(MemberVO info);
 

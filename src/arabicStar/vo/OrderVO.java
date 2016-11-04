@@ -13,9 +13,6 @@ public class OrderVO {
 	
 	private Room room;
 
-	public OrderVO(HotelVO hotel,RoomVO room){
-		
-	}
 	public Hotel getHotel() {
 		return hotel;
 	}

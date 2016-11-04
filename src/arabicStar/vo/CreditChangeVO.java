@@ -1,10 +1,12 @@
 package arabicStar.vo;
 
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 public class CreditChangeVO {
-	private OrderVO order;
-	private Date time;
+	private String memberID;
+	private String orderID;
+	private ZonedDateTime time;
 	private int originalCredit, changedCredit;
 
 	public int getChangedCredit() {

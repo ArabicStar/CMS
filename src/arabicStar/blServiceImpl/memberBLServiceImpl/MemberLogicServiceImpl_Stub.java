@@ -1,19 +1,21 @@
 package arabicStar.blServiceImpl.memberBLServiceImpl;
 
+import java.util.Random;
+
 import arabicStar.blService.memberBLService.MemberLogicService;
 import arabicStar.blService.orderBLService.OrderLogicService;
 import arabicStar.blService.promotionBLService.PromotionLogicService;
-import arabicStar.vo.ContactVO;
 import arabicStar.vo.CreditChangeVO;
 import arabicStar.vo.MemberVO;
 import arabicStar.vo.OrderVO;
-import arabicStar.vo.ResultMessage;
 
 public class MemberLogicServiceImpl_Stub implements MemberLogicService {
+	private Random idRandom;
 	private OrderLogicService orderBL;
 	private PromotionLogicService promotionBL;
 
 	public MemberLogicServiceImpl_Stub(OrderLogicService orderBL, PromotionLogicService promotionBL) {
+		idRandom = new Random();
 		this.orderBL = orderBL;
 		this.promotionBL = promotionBL;
 	}
@@ -39,6 +41,18 @@ public class MemberLogicServiceImpl_Stub implements MemberLogicService {
 	@Override
 	public boolean updateInfo(MemberVO info) {
 		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public boolean login(MemberVO member) {
+		// TODO 自动生成的方法存根
+		return false;
+	}
+
+	@Override
+	public boolean register(MemberVO member) {
+		idRandom.nextInt(10000000);
 		return false;
 	}
 
